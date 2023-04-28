@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Demo Website Molshree Sharma</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="inner_navbar">
+        <a href="" class="animate__animated ">Home</a>
+        <a href="" class="animate__animated ">About</a>
+        <a href="" class="animate__animated ">Contact</a>
+        
+      </div>
+    </div>
+    <div class="main">
+      <div class="inner_main">
+        <h2 class="welcome all animate__animated">Welcome,</h2>
+        <h2 class="to_our all animate__animated">to our</h2>
+        <h2 class="website all animate__animated">Website.</h2>
+      </div>
+      <p class="des animate__animated">
+        Learn more about our company and services
+      </p>
+      <button class="animate__animated" onclick="click_button()">Click</button>
+      <p id="show"></p>
+    </div>
+    <script>
+      function click_button() {
+        document.getElementById("show").innerHTML =
+          "Thank you for your interest in our company!";
+        document.getElementById("show").style.color = "green";
+        document.getElementById("show").style.backgroundColor = "lightgreen";
+        document.getElementById("show").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
